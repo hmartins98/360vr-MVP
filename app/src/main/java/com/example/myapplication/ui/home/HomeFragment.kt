@@ -53,7 +53,9 @@ class HomeFragment : Fragment() {
 
 
         val playerExo = this.context?.let { context -> ExoPlayer.Builder(context).build() }
-            var mediaItem = MediaItem.fromUri("https://file-examples.com/storage/feb01e0890649c510949c8e/2017/04/file_example_MP4_480_1_5MG.mp4")
+
+        //var mediaItem = MediaItem.fromUri("https://file-examples.com/storage/feb01e0890649c510949c8e/2017/04/file_example_MP4_480_1_5MG.mp4")
+            var mediaItem = MediaItem.fromUri("https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8")
             mediaItem?.let { media ->
                 if (playerExo != null) {
                     playerExo.setMediaItem(media)
